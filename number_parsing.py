@@ -11,3 +11,6 @@ def slash_find(str_in=""):
         else:
             return _i
     return -1
+    
+# TODO z listu stringu vyjmout slash 
+# TODO převést list stringu na list číslic
