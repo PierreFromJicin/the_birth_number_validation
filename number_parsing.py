@@ -18,5 +18,3 @@ def slash_find(str_in=""):
 
 Def num_validator(*arg):
 	pass
-
-
