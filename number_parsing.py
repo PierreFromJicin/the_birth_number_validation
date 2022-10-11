@@ -12,5 +12,8 @@ def slash_find(str_in=""):
             return _i
     return -1
     
-# TODO z listu stringu vyjmout slash 
-# TODO převést list stringu na list číslic
+# TODO z listu stringu vyjmout slash (Main)
+# TODO převést list stringu na list číslic (Main)
+# TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
+
+
