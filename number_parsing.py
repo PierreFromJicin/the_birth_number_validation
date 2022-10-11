@@ -17,6 +17,6 @@ def slash_find(str_in=""):
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
 
 Def num_validator(*arg):
-    pass
+	pass
 
 
