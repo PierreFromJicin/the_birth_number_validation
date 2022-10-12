@@ -11,3 +11,7 @@ def slash_find(str_in=""):
         else:
             return _i
     return -1
+
+
+li_str_in.pop(_i)    # the slash removing
+
