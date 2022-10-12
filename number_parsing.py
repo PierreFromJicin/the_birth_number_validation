@@ -11,9 +11,9 @@ def slash_find(str_in=""):
         else:
             return _i
     return -1
-    
-# TODO z listu stringu vyjmout slash (Main)
-# TODO převést list stringu na list číslic (Main)
+
+li_str_in.pop(_i)    # the slash removing
+
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
 
 Def num_validator(*arg):
