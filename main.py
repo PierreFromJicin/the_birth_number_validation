@@ -1,4 +1,4 @@
-import string_parsing,*
+import string_parsing *
 
 cl_in: str = input('enter the birth number (you can use slash separator or not) --> ')
 
