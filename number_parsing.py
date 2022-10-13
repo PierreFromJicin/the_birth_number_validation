@@ -39,7 +39,8 @@ def num_validator(num_list):
 										if ns == 0:
 											return True
 										else:
-											False
-										
+											return False
+									else:
+										return False
 								
     return False
