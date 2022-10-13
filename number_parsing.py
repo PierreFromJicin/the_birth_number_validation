@@ -42,5 +42,13 @@ def num_validator(num_list):
 											return False
 									else:
 										return False
-								
+								else:
+									for _i in range(0, 1):
+										# n *= 10
+										n = n*10+i[_i]
+									if n // 4 == 0:
+										# TODO opakování kódu (poslední fáze)
+									return False
+							else:
+								return False
     return False
