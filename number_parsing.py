@@ -18,7 +18,12 @@ def list_convertor(*tu_str):
 def num_validator(num_list):
 	i = num_list
 	if i[2] != 0:
-		if n((i[2] = 1) or (i[2] = 6)):
-			
-				
+		if not((i[2] = 1) or (i[2] = 6)):
+			if i[2] = 5:
+				if i[4] != 1:
+					if i[4] != 3:
+						if i[4] = 2:
+							if i[5] != 9:
+								if len(i)=10:
+									for _i in range(len(i))
     return False
