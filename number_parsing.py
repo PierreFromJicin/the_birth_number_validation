@@ -13,31 +13,26 @@ def list_convertor(*tu_str):
     return li_num
 
 
-
-def inner_fce(inli):
+def inner_z(inli):
 	i = inli
-	if len(i)==10:
+	if len(i)==10:	
 		for _i in range(0, 9):
 			# n *= 10
 			n = n*10+i[_i]
-			if n // 11 == 0:
-				return True
-				else:
-					return False
+		if n // 11 == 0:
+			return True
+			else:
+				return False
 		elif len(i)==9:
 			for _i in range(6, 8):
 				# n *= 10
 				ns = ns*10+i[_i]
-				if ns == 0:
-					return True
-				else:
-					return False
-					
-									else:
-										return False
-								else:
-
-
+			if ns == 0:
+				return True
+			else:
+				return False
+		else:
+			return False
 
 
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
