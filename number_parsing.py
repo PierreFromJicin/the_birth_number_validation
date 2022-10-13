@@ -26,7 +26,8 @@ def num_validator(num_list):
 							if i[5] != 9:
 								if len(i)=10:
 									for _i in range(0, 910):
-										n *= 10
-										n = 10i[_i]
-										
+										# n *= 10
+										n = n*10+i[_i]
+									if n // 11 = 0:
+										return True
     return False
