@@ -15,24 +15,24 @@ def list_convertor(*tu_str):
 
 def inner_z(inli):
 	i = inli
-	if len(i)==10:	
+	if len(i)==10:				# length is 10
 		for _i in range(0, 9):
 			# n *= 10
 			n = n*10+i[_i]
-		if n // 11 == 0:
+		if n // 11 == 0:		# 
 			return True
-			else:
-				return False
-		elif len(i)==9:
-			for _i in range(6, 8):
-				# n *= 10
-				ns = ns*10+i[_i]
-			if ns == 0:
-				return True
-			else:
-				return False
 		else:
 			return False
+	elif len(i)==9:				# length is 9
+		for _i in range(6, 8):
+			# n *= 10
+			ns = ns*10+i[_i]
+		if ns == 0:
+			return True
+		else:
+			return False
+	else:
+		return False
 
 
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
