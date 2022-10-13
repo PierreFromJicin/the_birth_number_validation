@@ -1,20 +1,19 @@
-def slash_find(str_in=""):
-    # str_in_len = len(str_in)
-    print(len(str_in))
-    li_str_in = list(str_in)
-    print(li_str_in)
+import string
 
-    for _i in range(len(str_in)):
-        print(_i)
-        if li_str_in[_i] != chr(0x2f):
-            continue
+
+def list_convertor(*tu_str):
+    li_str = list(tu_str[0])
+    li_num = []
+    for _i in range(len(li_str)):
+        if str(li_str[_i]) not in string.digits:
+            return False
         else:
-            return _i
-    return -1
+            li_num.append(int(li_str[_i]))
+            continue
+    return li_num
 
-li_str_in.pop(_i)    # the slash removing
 
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
 
-Def num_validator(*arg):
-	pass
+def num_validator(num_list):
+    pass
