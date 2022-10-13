@@ -36,28 +36,14 @@ def end_f(param):
         return False
 
 
-def num_validator(num_list):
-    i = num_list
-    n = 0
-    if i[2] != 0:
-        if not ((i[2] == 1) or (i[2] == 6)):
-            if i[2] == 5:
-                if i[4] != 1:
-                    if i[4] != 3:
-                        if i[4] == 2:
-                            if i[5] == 9:
-                                for _i in range(0, 1):
-                                    n = n * 10 + i[_i]
-                                if n // 4 == 0:
-                                    return end_f(i)
-                                else:
-                                    return False
-                            else:
-                                return False
-                        else:
-                            return False
-                    else:
-                        return False
+def mid_f(param):
+    if i[4] != 3:
+        if i[4] == 2:
+            if i[5] == 9:
+                for _i in range(0, 1):
+                    n = n * 10 + i[_i]
+                if n // 4 == 0:
+                    return end_f(i)
                 else:
                     return False
             else:
@@ -65,4 +51,36 @@ def num_validator(num_list):
         else:
             return False
     else:
-        return False
+        if i[5] == 0 or i[5] == 1:
+            return end_f(i)
+        else:
+            return False
+
+
+def num_validator(num_list):
+    i = num_list
+    n = 0
+    if i[2] != 0:
+        if not (i[2] == 1 or i[2] == 6):
+            if i[2] == 5:
+                if i[4] != 1:
+                    return mid_f(i)
+                else:
+                    return end_f(i)
+            else:
+                return False
+        else:
+            if i[3] == 0 or i[3] == 1 or i[3] == 2:
+                if i[4] == 1:
+                    return end_f(i)
+                else:
+                    return mid_f(i)
+            return False
+    else:
+        if i[3] == 0:
+            return False
+        else:
+            if i[4] == 1:
+                return end_f(i)
+            else:
+                return mid_f(i)
