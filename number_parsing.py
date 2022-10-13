@@ -30,4 +30,8 @@ def num_validator(num_list):
 										n = n*10+i[_i]
 									if n // 11 = 0:
 										return True
+									
+									else:
+										False
+									
     return False
