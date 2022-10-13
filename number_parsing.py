@@ -16,4 +16,9 @@ def list_convertor(*tu_str):
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
 
 def num_validator(num_list):
+	i = num_list
+	if i[2] != 0:
+		if n((i[2] = 1) or (i[2] = 6)):
+			
+				
     return False
