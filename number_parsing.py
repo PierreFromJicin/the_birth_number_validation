@@ -17,15 +17,15 @@ def end_f(param):
     i = param
     n = 0
     if len(i) == 10:  # length is 10
-        for _i in range(0, 9):
+        for _i in range(0, 10):
             # n *= 10
             n = n * 10 + i[_i]
-        if n // 11 == 0:  # modulo 11 must be 0
+        if n % 11 == 0:  # modulo 11 must be 0
             return True
         else:
             return False
     elif len(i) == 9:  # length is 9
-        for _i in range(6, 8):
+        for _i in range(6, 9):
             # n *= 10
             n = n * 10 + i[_i]
         if n == 0:
@@ -37,17 +37,19 @@ def end_f(param):
 
 
 def mid_f(param):
+    i = param
+    n = 0
     if i[4] != 3:
         if i[4] == 2:
             if i[5] == 9:
-                for _i in range(0, 1):
+                for _i in range(0, 2):
                     n = n * 10 + i[_i]
-                if n // 4 == 0:
+                if n % 4 == 0:
                     return end_f(i)
                 else:
                     return False
             else:
-                return False
+                return end_f(i)
         else:
             return False
     else:
