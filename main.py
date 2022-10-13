@@ -17,8 +17,7 @@ tu_str_in = slash_find(cl_in)
 birth_num = list_convertor(tu_str_in[1])
 # print(f"list čísel: {birth_num}")
 
-# TODO postoupit do validátoru pouze pokud:
-#  hodnota birth_num bude True a zároveň délka listu birt_num bude 9, nebo 10
+# TODO write num_validator in number_parsing module, according flowchart
 
 if birth_num:
     if len(birth_num) == 10 or len(birth_num) == 9:
