@@ -16,4 +16,4 @@ def list_convertor(*tu_str):
 # TODO samotný algoritmus analýzy (ify) a výstup True/False (this file)
 
 def num_validator(num_list):
-    pass
+    return False
