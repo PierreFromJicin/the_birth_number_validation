@@ -15,23 +15,26 @@ def list_convertor(*tu_str):
 
 def end_f(param):
     i = param
-    n = 0
+    n = t = y = 0
     if len(i) == 10:  # length is 10
         for _i in range(0, 10):
-            # n *= 10
-            n = n * 10 + i[_i]
-        if n % 11 == 0:  # modulo 11 must be 0
+            t = t * 10 + i[_i]
+        if t % 11 == 0:  # modulo 11 must be 0
             return True
         else:
             return False
     elif len(i) == 9:  # length is 9
         for _i in range(6, 9):
-            # n *= 10
             n = n * 10 + i[_i]
         if n == 0:
-            return True
-        else:
             return False
+        else:
+            for _i in range(0, 2):
+                y = y * 10 + i[_i]
+            if y < 54:  # year lower than 1954
+                return True
+            else:
+                return False
     else:
         return False
 
@@ -61,7 +64,6 @@ def mid_f(param):
 
 def num_validator(num_list):
     i = num_list
-    n = 0
     if i[2] != 0:
         if not (i[2] == 1 or i[2] == 6):
             if i[2] == 5:
