@@ -1,24 +1,24 @@
-import pytest
+# import pytest
 
 from number_parsing import number_validator_engine
 
 
-@pytest.mark.parametrize(
-    "param", [
-        ([9, 2, 6, 1, 2, 0, 2, 0, 2, 7]),
-        ([5, 2, 0, 8, 1, 2, 9, 6, 3]),
-        ([0, 8, 0, 2, 2, 9, 3, 1, 4, 0]),
-    ]
-)
-def test_number_validator_engine_length10_length9_modulo4_positive(param):
-    assert number_validator_engine(param[0]) is True
+# @pytest.mark.parametrize(
+#     "param", [
+#         ([9, 2, 6, 1, 2, 0, 2, 0, 2, 7]),
+#         ([5, 2, 0, 8, 1, 2, 9, 6, 3]),
+#         ([0, 8, 0, 2, 2, 9, 3, 1, 4, 0]),
+#     ]
+# )
+# def test_number_validator_engine_length10_length9_modulo4_positive(param):
+#     assert number_validator_engine(param[0]) is True
 
 
-"""def test_number_validator_engine_positive_length_9():
+def test_number_validator_engine_positive_length_9():
     assert number_validator_engine([5, 2, 0, 8, 1, 2, 9, 6, 3]) is True
 
 
-    def test_number_validator_engine_positive_modulo_4():
+def test_number_validator_engine_positive_modulo_4():
     assert number_validator_engine([0, 8, 0, 2, 2, 9, 3, 1, 4, 0]) is True
 
 
@@ -48,4 +48,3 @@ def test_number_validator_engine_negative_wrong_year():
 
 def test_number_validator_engine_negative_modulo_4():
     assert number_validator_engine([0, 3, 0, 2, 2, 9, 3, 4, 6, 7]) is False
-"""
