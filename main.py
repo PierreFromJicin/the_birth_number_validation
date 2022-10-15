@@ -1,16 +1,7 @@
 from number_parsing import *
 from string_parsing import *
 
-command_line_input: str = input('enter the birth number (you can use the slash separator if you want) --> ')
-
-# slash_index = slash_find(cl_in)
-#
-# '''
-# if slash_index[0] == -1:
-#     print('has been entered birth number without slash')
-# else:
-#     print(f"Slash is on index:  {slash_index[0]} in the string.")
-# '''
+command_line_input: str = input('enter the birth number --> ')
 
 digits_string = digits_filter(command_line_input)
 birth_number = list_convertor(digits_string)

@@ -1,24 +1,9 @@
-# import string
-
-
 def list_convertor(string_in):
     output_list = []
     for item in string_in:
         output_list.append(int(item))
     return output_list
 
-
-# ---------------- original entry --------------------
-# def list_convertor(li_str):
-# li_num = []
-#     for _i in range(len(li_str)):
-#         if str(li_str[_i]) not in string.digits:
-#             return False
-#         else:
-#             li_num.append(int(li_str[_i]))
-#             continue
-#     return li_num
-# ---------------------------------------------------
 
 def end_f(param):
     i = param
