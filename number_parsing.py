@@ -1,8 +1,7 @@
 import string
 
 
-def list_convertor(*tu_str):
-    li_str = list(tu_str[0])
+def list_convertor(li_str):
     li_num = []
     for _i in range(len(li_str)):
         if str(li_str[_i]) not in string.digits:
