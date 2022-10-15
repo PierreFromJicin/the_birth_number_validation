@@ -5,9 +5,9 @@ from number_parsing import number_validator_engine
 
 @pytest.mark.parametrize(
     "param", [
-        ([9, 2, 6, 1, 2, 0, 2, 0, 2, 7]),
-        ([5, 2, 0, 8, 1, 2, 9, 6, 3]),
-        ([0, 8, 0, 2, 2, 9, 3, 1, 4, 0]),
+        ([9, 2, 6, 1, 2, 0, 2, 0, 2, 7],),
+        ([5, 2, 0, 8, 1, 2, 9, 6, 3],),
+        ([0, 8, 0, 2, 2, 9, 3, 1, 4, 0],),
     ]
 )
 def test_number_validator_engine_length10_length9_modulo4_positive(param):
